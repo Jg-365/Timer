@@ -39,7 +39,7 @@ body {
   flex: 1 1 300px;
   z-index: -1;
   position: absolute;
-  background: linear-gradient(to bottom, #ab9aec, #bf2607);
+  background: linear-gradient(to bottom, #ab9aec, #bf0741);
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -139,13 +139,17 @@ body {
   padding: 16px;
   max-height: 50px;
   width: 150px;
-  background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+  background: linear-gradient(135deg, #d0f9f1, #4867ed);
   margin: 10px;
   transition: 0.3s ease;
   filter: drop-shadow(3px 5px 10px rgba(0, 10, 15, 0.267));
+  border: 4px solid #610952;
 }
 
 .container button:hover {
   transform: scale(1.1);
   transition: 0.3s ease;
+  background: linear-gradient(135deg, #b8a1e6, #1e0445);
+  color: white;
+  border: 4px solid #ffffff;
 }
