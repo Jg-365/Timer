@@ -23,27 +23,27 @@
       <div class="container">
         <div class="background"></div>
         <div class="sep1">
+          <div class="background2"></div>
           <div class="tempo">
-            <h2>Hora</h2>
+            <h2>Horas:</h2>
             <select name="horas" id="horas"></select>
           </div>
           <div class="tempo">
-            <h2>Minutos</h2>
+            <h2>Minutos:</h2>
             <select name="minutos" id="minutos"></select>
           </div>
           <div class="tempo">
-            <h2>Segundos</h2>
+            <h2>Segundos:</h2>
             <select name="segundos" id="segundos"></select>
           </div>
         </div>
         <div class="sep2">
           <div id="display" class="display">
-            <h3>00:00:00</h3>
+            <h1 id="time">00:00:00</h1>
           </div>
           <!--display-->
-          <button id="começar" name="começar" onclick="disableButton()">
-            Começar
-          </button>
+          <button id="começar" name="começar">Começar</button>
+          <button id="parar" name="parar">Resetar</button>
         </div>
       </div>
       <!--container-->

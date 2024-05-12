@@ -42,6 +42,10 @@ function changeColor() {
   time.style.color = "yellow";
 }
 
+function defaultColor() {
+  time.style.color = "white";
+}
+
 começar.addEventListener("click", function () {
   changeColor();
   horaAtual = horas.value;
@@ -75,6 +79,7 @@ começar.addEventListener("click", function () {
             document.getElementById("sound").play();
             alert("Tempo esgotado!");
             clearInterval(interval);
+            defaultColor();
           }
         } else {
           //horaAtual <= 0 && minAtual > 0 && segAtual <= 0
@@ -95,6 +100,7 @@ começar.addEventListener("click", function () {
 
 parar.addEventListener("click", function () {
   undisableButton();
+  defaultColor();
   document.getElementById("sound").pause();
   document.getElementById("sound").currentTime = 0;
   clearInterval(interval);
