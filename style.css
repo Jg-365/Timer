@@ -44,8 +44,6 @@ body {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
 }
 
 .container .sep1 {
