@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <audio
@@ -27,8 +31,12 @@
           <div class="tempo">
             <h2>Horas:</h2>
             <select name="horas" id="horas"></select>
+          </div>
+          <div class="tempo">
             <h2>Minutos:</h2>
             <select name="minutos" id="minutos"></select>
+          </div>
+          <div class="tempo">
             <h2>Segundos:</h2>
             <select name="segundos" id="segundos"></select>
           </div>
@@ -38,8 +46,14 @@
             <h1 id="time">00:00:00</h1>
           </div>
           <!--display-->
-          <button id="começar" name="começar">Começar</button>
-          <button id="parar" name="parar">Resetar</button>
+          <div class="buttons">
+            <button id="começar" name="começar">
+              <i class="bi bi-play-fill"></i>
+            </button>
+            <button id="parar" name="parar">
+              <i class="bi bi-stop-circle-fill"></i>
+            </button>
+          </div>
         </div>
       </div>
       <!--container-->
