@@ -159,12 +159,13 @@ body {
 }
 
 .container .buttons button i {
+  color: #1e0445;
   font-size: 1.6rem;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate((-50%, -50%));
+  -webkit-transform: translate(-50%, -50);
 }
 .container button:hover {
   transform: scale(1.1);
