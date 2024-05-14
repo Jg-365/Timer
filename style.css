@@ -146,6 +146,7 @@ body {
 }
 
 .container .buttons button {
+  will-change: transform;
   margin: 0;
   padding: 0;
   border: none;
@@ -251,5 +252,21 @@ body {
     flex: 1 1 150px;
     margin: 2%;
     flex-wrap: wrap;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .btn {
+      display: -webkit-flex; /* Flexbox para WebKit */
+      -webkit-align-items: center; /* Alinhamento vertical no Safari */
+      -webkit-justify-content: center; /* Alinhamento horizontal no Safari */
+    }
+
+    .btn .icon {
+      -webkit-transform: translateY(
+        0
+      ); /* Correção de posição específica para Safari */
+    }
   }
 }
