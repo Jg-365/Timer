@@ -61,6 +61,7 @@ body {
   box-shadow: 2px 2px 11px rgb(30, 4, 4);
   overflow: hidden;
   min-height: 73px;
+  max-height: 400px;
   margin: 2%;
 }
 
